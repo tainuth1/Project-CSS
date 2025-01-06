@@ -121,9 +121,145 @@
   font-size: 30px;
   color: #434343;
 }
-.support:nth-child(2){
-    width: 230px;
+.support:nth-child(2) {
+  width: 230px;
 }
-.support:nth-child(4){
-    height: 55px;
+.support:nth-child(4) {
+  height: 55px;
+}
+
+/* ======Menu Section =========== */
+.back-menu {
+  width: 100%;
+  background-color: #fdf0e1;
+}
+.menu-section {
+  width: 1450px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+.category {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.category i {
+  font-size: 25px;
+}
+.category select {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  font-weight: 700;
+}
+.category select:hover {
+  color: #e97000;
+}
+
+.menu {
+  display: flex;
+  gap: 45px;
+}
+.menu li {
+  list-style: none;
+  font-size: 20px;
+  font-weight: 600;
+  color: #3c3c3c;
+}
+.menu li:hover {
+  color: #e97000;
+}
+.menu li:first-child {
+  color: #e97000;
+}
+.menu li:nth-child(2) {
+  position: relative;
+}
+.menu li:nth-child(2):hover .sub-menu {
+  height: 340px;
+}
+.sub-menu {
+  position: absolute;
+  background-color: #fdf0e1;
+  width: 100vw;
+  top: 45px;
+  height: 0;
+  left: -606px;
+  transition: all 0.5s ease;
+  overflow: hidden;
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; 
+}
+.a {
+  padding: 20px;
+}
+.menu-cards {
+  width: 1450px;
+  margin: auto;
+  display: grid;
+  margin-top: 20px;
+  gap: 30px;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 330px;
+}
+.card{
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+.card h4{
+  margin-top: 15px;
+}
+.card .image-container{
+  width: 100%;
+  height: 260px;
+  border-radius: 25px;
+  overflow: hidden;
+  border: 2px solid #ebe2d8;
+}
+.card .image-container img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.menu li:nth-child(4) {
+  position: relative;
+}
+.menu li:nth-child(4):hover .page-sub-menu{
+  height: 115px;
+}
+.page-sub-menu{
+  position: absolute;
+  background-color: #fdf0e1;
+  overflow: hidden;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  width: 200px;
+  top: 45px;
+  transition: all 0.2s ease;
+  height: 0;
+}
+.page-sub-menu ul{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px 25px;
+}
+
+.discount {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 20px;
+  color: #e97000;
+  font-weight: 600;
+}
+.discount i {
+  color: #3c3c3c;
 }
