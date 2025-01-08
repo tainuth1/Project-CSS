@@ -193,7 +193,7 @@
   overflow: hidden;
   border-bottom-right-radius: 30px;
   border-bottom-left-radius: 30px;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; 
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .a {
   padding: 20px;
@@ -207,22 +207,22 @@
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: 330px;
 }
-.card{
+.card {
   width: 100%;
   height: 100%;
   text-align: center;
 }
-.card h4{
+.card h4 {
   margin-top: 15px;
 }
-.card .image-container{
+.card .image-container {
   width: 100%;
   height: 260px;
   border-radius: 25px;
   overflow: hidden;
   border: 2px solid #ebe2d8;
 }
-.card .image-container img{
+.card .image-container img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -231,10 +231,10 @@
 .menu li:nth-child(4) {
   position: relative;
 }
-.menu li:nth-child(4):hover .page-sub-menu{
+.menu li:nth-child(4):hover .page-sub-menu {
   height: 115px;
 }
-.page-sub-menu{
+.page-sub-menu {
   position: absolute;
   background-color: #fdf0e1;
   overflow: hidden;
@@ -245,7 +245,7 @@
   transition: all 0.2s ease;
   height: 0;
 }
-.page-sub-menu ul{
+.page-sub-menu ul {
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -262,4 +262,72 @@
 }
 .discount i {
   color: #3c3c3c;
+}
+
+/* Banner */
+.back-banner {
+  width: 100%;
+  aspect-ratio: 21/8;
+  background-image: url(images/banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.banner {
+  width: 1450px;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  gap: 25px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+.banner p:first-child {
+  font-size: 18px;
+  color: white;
+  background-color: dodgerblue;
+  padding: 5px 10px;
+  border-radius: 50px;
+}
+.banner h2 {
+  font-size: 65px;
+  color: #282828;
+}
+.banner .desc {
+  font-size: 20px;
+  font-weight: 500;
+}
+.banner button{
+  padding: 15px 35px;
+  font-size: 19px;
+  border: none;
+  color: white;
+  background-color: #e97000;
+  border-radius: 15px;
+  transition: all 1s ease;
+}
+.banner button:hover{
+  background-color: black;
+}
+
+/* Slider */
+.back-slider{
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.slider{
+ width: 100%;
+ height: 100px;
+}
+.slider div{
+  display: flex;
+}
+.slider .img-container{
+  padding: 15px 0;
+  height: 100px;
+}
+.slider .img-container img{
+  height: 100%;
 }
